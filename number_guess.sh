@@ -19,7 +19,7 @@ else
   BEST_GAME=$($PSQL "SELECT MIN(number_of_guesses) FROM games WHERE user_id=$USER_ID")
   if [[ $GAMES_PLAYED -eq 0 ]]
   then
-    echo "Welcome back, $USERNAME! You have played 0 games, and your best game took  guesses."
+    echo "Welcome back, $USERNAME! You have played 0 games, and your best game took 0 guesses."
   else
     echo "Welcome back, $USERNAME! You have played $GAMES_PLAYED games, and your best game took $BEST_GAME guesses."
   fi
